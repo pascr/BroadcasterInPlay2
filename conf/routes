@@ -5,7 +5,6 @@
 # Home page
 GET     /                           controllers.Application.index
 
-GET 	/servereventsindividual		controllers.Application.servereventsindividual
 GET		/servereventshub			controllers.Application.servereventshub
 GET		/servereventsshared			controllers.Application.servereventsshared
 
