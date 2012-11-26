@@ -5,8 +5,8 @@
 # Home page
 GET     /                           controllers.Application.index
 
+GET 	/serverevents				controllers.Application.serverevents
 GET		/servereventshub			controllers.Application.servereventshub
-GET		/servereventsshared			controllers.Application.servereventsshared
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file              	controllers.Assets.at(path="/public", file)

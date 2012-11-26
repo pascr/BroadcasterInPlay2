@@ -25,8 +25,8 @@ object Application extends Controller {
   //Streams.getmtime &> EventSource() means: 
   //  passe Streams.getmtime _through_ EventSource and get a modified Enumarator
 
-    //each client get a different stream of time values
-  def servereventsshared = Action {
+  //each client get a different stream of time values
+  def serverevents = Action {
     Ok.stream(timeEnum &> EventSource())
   }
 
